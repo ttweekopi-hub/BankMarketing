@@ -52,3 +52,11 @@ The app presents the EDA as a step-by-step narrative:
 - **Statistical Associations and Correlation Review**: uses chi-square tests, Mann-Whitney U tests, and correlation checks
 - **Leakage and Modelling Risks**: highlights features that need careful treatment before modelling
 - **Conclusions and Modelling Strategy**: converts EDA findings into a practical modelling plan
+
+## Dataset Citation
+
+This dataset is publicly available for research and was described in:
+
+Moro, S., Cortez, P., & Rita, P. (2014). *A Data-Driven Approach to Predict the Success of Bank Telemarketing*. Decision Support Systems. https://doi.org/10.1016/j.dss.2014.03.001
+
+Dataset source on Kaggle: https://www.kaggle.com/datasets/sahistapatel96/bankadditionalfullcsv

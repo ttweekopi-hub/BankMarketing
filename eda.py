@@ -220,7 +220,7 @@ if page == "Overview":
         names=["No subscription", "Subscribed"],
         hole=0.45,
         color=["No subscription", "Subscribed"],
-        color_discrete_map={"No subscription": "#6b7280", "Subscribed": "#0f766e"},
+        color_discrete_map={"No subscription": "#216205", "Subscribed": "#08011c"},
         title="Target distribution",
     )
     target_chart.update_traces(textinfo="label+percent", sort=False)
