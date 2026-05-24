@@ -2,6 +2,8 @@
 
 Interactive Streamlit app: https://bankmarketing-gl8wwhxgwyxyfxa5xqutvi.streamlit.app/
 
+![Streamlit app overview](images/streamlit_overview.png)
+
 ## Overview
 
 I built this Streamlit app to turn the Bank Marketing dataset into a guided exploratory data analysis story. The dataset describes a Portuguese bank's direct marketing campaigns, where clients were contacted by phone and the business outcome was whether each client subscribed to a term deposit.
