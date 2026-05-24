@@ -1,0 +1,23 @@
+# Core tabular ML workflow
+numpy
+pandas
+scikit-learn
+scipy
+joblib
+plotly
+
+# EDA and visualization
+matplotlib
+seaborn
+
+# Notebooks and reproducibility
+jupyterlab
+ipykernel
+python-dotenv
+tqdm
+
+# Model interpretation for baseline reviews
+shap
+
+# Streamlit for interactive EDA and model review
+streamlit
