@@ -50,6 +50,16 @@ DATA_DICTIONARY = pd.DataFrame(
     ]
 )
 
+TARGET_LABEL_COLOR_MAP = {
+    "No subscription": "#2563EB",
+    "Subscribed": "#FACC15",
+}
+
+TARGET_VALUE_COLOR_MAP = {
+    "no": TARGET_LABEL_COLOR_MAP["No subscription"],
+    "yes": TARGET_LABEL_COLOR_MAP["Subscribed"],
+}
+
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
@@ -220,10 +230,7 @@ if page == "Overview":
         names=["No subscription", "Subscribed"],
         hole=0.45,
         color=["No subscription", "Subscribed"],
-        color_discrete_map={
-            "No subscription": "#2563EB",
-            "Subscribed": "#FACC15",
-        },
+        color_discrete_map=TARGET_LABEL_COLOR_MAP,
         title="Target distribution",
     )
     target_chart.update_traces(texttemplate="%{label}<br>%{percent:.2%}", sort=False)
@@ -327,7 +334,7 @@ elif page == "Data Quality and Target Distribution":
             y="count",
             text="percent",
             color="target",
-            color_discrete_map={"no": "#6b7280", "yes": "#0f766e"},
+            color_discrete_map=TARGET_VALUE_COLOR_MAP,
             title="Chart 1: Target Distribution",
         )
         target_bar.update_traces(texttemplate="%{text:.2f}%", textposition="outside")
