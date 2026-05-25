@@ -220,10 +220,13 @@ if page == "Overview":
         names=["No subscription", "Subscribed"],
         hole=0.45,
         color=["No subscription", "Subscribed"],
-        color_discrete_map={"No subscription": "#216205", "Subscribed": "#08011c"},
+        color_discrete_map={
+            "No subscription": "#2563EB",
+            "Subscribed": "#FACC15",
+        },
         title="Target distribution",
     )
-    target_chart.update_traces(textinfo="label+percent", sort=False)
+    target_chart.update_traces(texttemplate="%{label}<br>%{percent:.2%}", sort=False)
     st.plotly_chart(target_chart, width="stretch")
 
     section_note(
